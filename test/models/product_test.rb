@@ -19,7 +19,21 @@ class ProductTest < ActiveSupport::TestCase
       assert product.invalid?
       assert_equal ["has already been taken"], product.errors[:title]
    end
-
+   test "product price (rappen) must have 5 steps (-> 0 and 5 allows)" do
+      product = Product.new(title: "My Book Title",
+      description: "yyy",
+      image_url: "zzz.jpg")
+      product.price = 0.02
+      assert product.invalid?
+      assert_equal ["must be 0.00 or 0.05"],
+      product.errors[:price]
+      product.price = 0.50
+      assert product.valid?
+      product.errors[:price]
+      product.price = 0.55
+      assert product.valid?
+   end
+   
    test "product price must be positive" do
       product = Product.new(title: "My Book Title",
       description: "yyy",

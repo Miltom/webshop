@@ -10,5 +10,11 @@ class Product < ActiveRecord::Base
    validate :something
          
          
-  
+   def something
+         if(price!=nil)
+            if(price%0.05!=0)
+               errors.add(:price, 'Rappen nur in 5 Schritten erlaubt')
+            end
+         end
+   end 
 end
