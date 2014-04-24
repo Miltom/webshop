@@ -1,0 +1,12 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h2>Your Pragmatic Cart</h2>
+<ul>    
+  <% @cart.line_items.each do |item| %>
+    <li><%= item.product.title %>: $ <%= item.product.price %></li>
+  <% end %>
+</ul>
+
+<div class="price_total">Price total: <span><%= sumaryprice() %></span></div>
