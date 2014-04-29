@@ -5,7 +5,8 @@
 <h2>Your Pragmatic Cart</h2>
 <ul>    
   <% @cart.line_items.each do |item| %>
-    <li><%= item.product.title %>: $ <%= item.product.price %></li>
+    <!--<li><%= item.product.title %>: <%=  price_in_chf(item.product.price) %></li>-->
+     <li><%= item.quantity %> &times; <%= item.product.title %></li>
   <% end %>
 </ul>
 
