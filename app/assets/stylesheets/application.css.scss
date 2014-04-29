@@ -13,15 +13,16 @@
  */
 
 #banner {
-  background: #9c9;
+  background: #6a0043;
   padding: 10px;
   border-bottom: 2px solid;
-  font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  font: small-caps 35px/35px verdana, arial, helvetica, sans-serif;
+  color: #FFFFFF;
   text-align: center;
 
   img {
     float: left;
+    height: 40px;
   }
 }
 
@@ -35,7 +36,7 @@
 }
 
 #columns {
-  background: #141;
+  background: #b35791;
 
   #main {
     margin-left: 17em;
@@ -47,14 +48,14 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #b35791;
 	
     ul {
       padding: 0;
       li {
         list-style: none;
         a {
-          color: #bfb;
+          color: #ffffff;
           font-size: small;
         }
       }
