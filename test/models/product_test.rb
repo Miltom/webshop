@@ -25,7 +25,7 @@ class ProductTest < ActiveSupport::TestCase
       image_url: "zzz.jpg")
       product.price = 0.02
       assert product.invalid?
-      assert_equal ["must be 0.00 or 0.05"],
+      assert_equal ["Rappen nur in 5 Schritten erlaubt"],
       product.errors[:price]
       product.price = 0.50
       assert product.valid?
