@@ -18,8 +18,16 @@
     <div id="side">
 <!-- START_HIGHLIGHT -->
       <div id="cart">
+
+<!-- START_HIGHLIGHT -->
+      <!-- START:hidden_div -->
+      <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
         <%= render @cart %>
-      </div>
+      <% end %>
+    </div>
+    <!-- END:hidden_div -->
+
+<!-- END_HIGHLIGHT -->
 
 <!-- END_HIGHLIGHT -->
       <ul>
