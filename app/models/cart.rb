@@ -11,4 +11,14 @@ class Cart < ActiveRecord::Base
       end
       current_item
    end
+   
+   def sumaryprice
+      summe=0
+         self.line_items.each do |item|
+          summe += item.product.price * item.quantity
+         end
+         
+      #sprintf("%0.02f CHF", summe)
+   summe
+end
 end

@@ -2,12 +2,6 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h2>Your Pragmatic Cart</h2>
-<ul>    
-  <% @cart.line_items.each do |item| %>
-    <!--<li><%= item.product.title %>: <%=  price_in_chf(item.product.price) %></li>-->
-     <li><%= item.quantity %> &times; <%= item.product.title %></li>
-  <% end %>
-</ul>
-
-<div class="price_total">Price total: <span><%= sumaryprice() %></span></div>
+<!-- START_HIGHLIGHT -->
+<%= render @cart %>
+<!-- END_HIGHLIGHT -->
