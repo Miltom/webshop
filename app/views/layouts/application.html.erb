@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pragprog Books Online Store</title>
+  <title>Mili's Online Store</title>
   <%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,8 +11,8 @@
 <!-- END:head -->
 <body class="<%= controller.controller_name %>">
   <div id="banner">
-    <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= image_tag("muster_simple_new.png") %>
+    <%= @page_title || "Mili's Webshop" %>
   </div>
   <div id="columns">
     <div id="side">
@@ -30,15 +30,16 @@
     <!-- END:hidden_div -->
 
 <!-- END_HIGHLIGHT -->
-
+<p></br></p>
 <!-- END_HIGHLIGHT -->
       <ul>
         <li><a href="..">Home</a></li>
         <li><a href="/products">Products</a></li>
-        <li><a href="/faq">Questions</a></li>
+        <!-- <li><a href="/faq">Questions</a></li>
         <li><a href="/news">News</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>-->
       </ul>
+      
     </div>
     <div id="main">
       <%= yield %>

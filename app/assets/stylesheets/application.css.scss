@@ -12,17 +12,36 @@
  *= require_tree .
  */
 
+
+h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 150% sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #6a0043;
+ }
+
+ h3 {
+       font-size: 120%;
+       font-family: verdana, arial, helvetica, sans-serif;
+       margin-left: 100px;
+       margin-top: 0;
+       margin-bottom: 2px;
+       color: #227;
+      }
+
+ 
 #banner {
   background: #6a0043;
-  padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 35px/35px verdana, arial, helvetica, sans-serif;
   color: #FFFFFF;
   text-align: center;
-
+  height: 100px;
+  line-height: 100px;
   img {
     float: left;
-    height: 40px;
+    height: 100px;
   }
 }
 
@@ -39,7 +58,7 @@
   background: #b35791;
 
   #main {
-    margin-left: 17em;
+    margin-left: 20em;
     padding: 1em;
     background: white;
   }
@@ -47,7 +66,6 @@
   #side {
     float: left;
     padding: 1em 2em;
-    width: 13em;
     background: #b35791;
 
 
@@ -87,4 +105,42 @@
       }
     }
   }
+
+
+  .depot_form {
+    fieldset {
+      background: white;
+      legend {
+        color: #dfd;
+        background: #6a0043;
+        font-family: sans-serif;
+        padding: 0.2em 1em;
+      }
+    }
+      background: #6a0043;
+  form {
+      background: white;
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin--left: 0.5em;
+    }
+
+    .submit {
+       margin-left: 4em;
+    }
+
+    br {
+       display: none
+     }
+  }
+}
+
 }

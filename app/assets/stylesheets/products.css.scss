@@ -3,50 +3,54 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 .products {
-table {
-border-collapse: collapse;
-}
+	table {
+		border-collapse: collapse;
+	}
 
-table tr td {
-padding: 5px;
-vertical-align: top;
-}
+	table tr td {
+		padding: 5px;
+		vertical-align: top;
+	}
 
-.list_image {
-width: 60px;
-height: 70px;
-}
+	.list_image {
+		width: 60px;
+		height: 70px;
+	}
 
-.list_description {
-width: 60%;
+	.list_description {
+		width: 60%;
 
- dl {
-margin: 0;
-}
+	 dl {
+		margin: 0;
+	}
 
- dt {
- color: #244;
- font-weight: bold;
- font-size: larger;
+
+	 dt {
+		  font: 150% sans-serif;
+		  color: #226;
+		 font-weight: bold;
+		 font-size: larger;
+	 }
+
+	 dd {
+	       color: #227;
+	 		margin: 0;       font-family: verdana, arial, helvetica, sans-serif;
+	 }
  }
 
- dd {
- margin: 0;
- }
- }
+	 .list_actions {
+		 font-size: x-small;
+		 text-align: right;
+		 padding-left: 1em;
+	 }
 
- .list_actions {
- font-size: x-small;
- text-align: right;
- padding-left: 1em;
- }
+	 .list_line_even {
+		 background: #ffffff;
+	 }
 
- .list_line_even {
- background: #ffffff;
- }
-
- .list_line_odd {
- background: #eaeaea;
- }
+	 .list_line_odd {
+		 background: #eaeaea;
+	 }
 }
